@@ -1,0 +1,27 @@
+# platform settings
+dist: trusty
+language: 
+  - ruby
+  - java
+jdk: openjdk8
+rvm:
+  - 2.7
+
+# git settings
+git:
+  submodules: false
+branches:
+  only:
+  - master
+
+# ci/cd
+
+install: gem install jekyll && gem install s3_website
+
+script:
+  - jekyll build
+
+after_success:
+#  - source /opt/jdk_switcher/jdk_switcher
+#  - jdk_switcher use openjdk8
+  - s3_website push --verbose
