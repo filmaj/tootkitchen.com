@@ -16,7 +16,10 @@
         <a href="/about">About</a>
         <a href="/products">Products</a>
       </nav>
+      { 
+      {% if page.headerless == nil %}
       <h1><a href="/">Toot Kitchen</a></h1>
+      {% endif %}
     </header>
     <section>
       {{ content }}
