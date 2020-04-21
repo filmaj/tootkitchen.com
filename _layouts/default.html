@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Fil Maj" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <nav id="site-nav" class="row">
+        <a href="/about">About</a>
+        <a href="/food">Food</a>
+      </nav>
+      <h1><a href="/">Toot Kitchen</a></h1>
+    </header>
+    <section>
+      {{ content }}
+    </section>
+  </body>
+  <script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 'Source Sans Pro:Semi-Bold', 'Source Serif Pro:Regular', 'Material+Icons' ] }
+    };
+    (function() {
+      var s = document.getElementsByTagName('script')[0];
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.type = 'text/javascript'; wf.async = 'true';
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+</html>
