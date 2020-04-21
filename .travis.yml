@@ -7,6 +7,9 @@ jdk: openjdk8
 rvm:
   - 2.7
 
+# cache ruby deps
+cache: bundler
+
 # git settings
 git:
   submodules: false
@@ -15,8 +18,7 @@ branches:
   - master
 
 # ci/cd
-
-install: gem install jekyll && gem install s3_website
+install: bundle install
 
 script:
   - jekyll build
