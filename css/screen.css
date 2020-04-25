@@ -3,7 +3,7 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: 'Source Serif Pro', serif;
-  color: rgba(0, 0, 0, 0.8);
+  color: #313139;
   background-color: #E4E5EA;
 }
 h1 {
@@ -23,15 +23,15 @@ body {
 }
 #site-nav {
   width: fit-content;
-  position: relative;
-  top: 25px;
+  margin: 0 auto;
 }
 #site-nav a {
-  font-size: 1.25em;
-  margin: 0 10px;
+  font-size: 18px;
+  margin: 0 7px;
   flex-wrap: wrap;
-  font-family: 'Lato';
-  font-weight: 700;
+  font-family: 'Poppins';
+  font-weight: 300;
+  letter-spacing:0.5px;
 }
 /* Header/Navigation */
 header {
@@ -39,8 +39,11 @@ header {
 }
 header h1 {
   text-align: center;
-  margin: 50px;
-  font-family: 'Didot Regular';
+  margin-top: 150px;
+  font-size:32px;
+  letter-spacing:3px;
+  font-family: 'Libre Baskerville';
+  font-weight: 400;
 }
 nav > a {
 }
