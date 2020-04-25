@@ -19,15 +19,15 @@
   <body>
   {% endif %}
     <header>
-      <nav id="site-nav" class="row">
-        <a href="/about">ABOUT</a>
-        <a href="/products">PRODUCTS</a>
-        <a href="/blog">BLOG</a>
-        <a href="/contact">CONTACT</a>
-      </nav>
       {% if page.headerless == nil %}
-      <h1><a href="/">Toot Kitchen</a></h1>
+      <h1><a href="/">TOOT KITCHEN</a></h1>
       {% endif %}
+      <nav id="site-nav" class="row">
+        <a href="/about">About</a>
+        <a href="/products">Products</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
     </header>
     <section>
       {{ content }}
@@ -35,7 +35,7 @@
   </body>
   <script type="text/javascript">
     WebFontConfig = {
-        google: { families: [ 'Lato' ] }
+        google: { families: [ 'Libre Baskerville:400', 'Poppins:300' ] }
     };
     (function() {
       var s = document.getElementsByTagName('script')[0];
