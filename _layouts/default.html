@@ -9,14 +9,22 @@
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.description }}" />
     <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+    <style>
+    @font-face{font-family:Didot Regular;src:url('/css/didot-regular.woff');}
+    </style>
   </head>
+  {% if page.title == "Toot Kitchen" %}
+  <body style="background-image: url(/img/hero-gradient.png); background-size:cover;background-position:center;background-attachment:fixed;height: 100%;height: -moz-available;height: -webkit-fill-available;height: fill-available;">
+  {% else %}
   <body>
+  {% endif %}
     <header>
       <nav id="site-nav" class="row">
-        <a href="/about">About</a>
-        <a href="/products">Products</a>
+        <a href="/about">ABOUT</a>
+        <a href="/products">PRODUCTS</a>
+        <a href="/blog">BLOG</a>
+        <a href="/contact">CONTACT</a>
       </nav>
-      { 
       {% if page.headerless == nil %}
       <h1><a href="/">Toot Kitchen</a></h1>
       {% endif %}
@@ -27,7 +35,7 @@
   </body>
   <script type="text/javascript">
     WebFontConfig = {
-        google: { families: [ 'Source Sans Pro:Semi-Bold', 'Source Serif Pro:Regular', 'Material+Icons' ] }
+        google: { families: [ 'Lato' ] }
     };
     (function() {
       var s = document.getElementsByTagName('script')[0];
