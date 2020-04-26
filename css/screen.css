@@ -24,13 +24,15 @@ body {
   width: fit-content;
   margin: 0 auto;
 }
-#site-nav a {
+.poppins {
   font-size: 18px;
-  margin: 0 7px;
-  flex-wrap: wrap;
   font-family: 'Poppins';
   font-weight: 300;
   letter-spacing:0.5px;
+}
+#site-nav a {
+  margin: 0 7px;
+  flex-wrap: wrap;
 }
 #site-nav a.selected {
   text-decoration: underline;
@@ -82,14 +84,15 @@ section p {
 }
 section h1, section h2, section h3 {
   text-align:center;
-  font-family: 'Poppins';
-  font-weight: 300;
+  font-family: 'Libre Baskerville';
+  font-weight: 400;
 }
 section h1 {
   margin: 5px;
 }
 section h2 {
   margin: 0 10px;
+  font-size: 21px;
 }
 section h3 {
   margin: 0 15px;

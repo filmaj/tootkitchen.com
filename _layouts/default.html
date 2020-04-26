@@ -19,7 +19,7 @@
       {% if page.headerless == nil %}
       <h1><a href="/">TOOT KITCHEN</a></h1>
       {% endif %}
-      <nav id="site-nav" class="row">
+      <nav id="site-nav" class="row poppins">
         {% if page.url contains '/about' %}
         <a href="/about" class="selected">About</a>
         {% else %}
@@ -44,7 +44,7 @@
   </body>
   <script type="text/javascript">
     WebFontConfig = {
-        google: { families: [ 'Libre Baskerville:400', 'Poppins:300' ] }
+        google: { families: [ 'Libre Baskerville:400', 'Poppins:300,600,900' ] }
     };
     (function() {
       var s = document.getElementsByTagName('script')[0];
