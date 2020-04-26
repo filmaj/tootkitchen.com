@@ -9,9 +9,6 @@
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.description }}" />
     <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
-    <style>
-    @font-face{font-family:Didot Regular;src:url('/css/didot-regular.woff');}
-    </style>
   </head>
   {% if page.title == "Toot Kitchen" %}
   <body style="background-image: url(/img/hero-gradient.png); background-size:cover;background-position:top;background-attachment:fixed;height: 100%;height: -moz-available;height: -webkit-fill-available;height: fill-available;">
@@ -23,10 +20,22 @@
       <h1><a href="/">TOOT KITCHEN</a></h1>
       {% endif %}
       <nav id="site-nav" class="row">
+        {% if page.url contains '/about' %}
+        <a href="/about" class="selected">About</a>
+        {% else %}
         <a href="/about">About</a>
+        {% endif %}
+        {% if page.url contains '/products' %}
+        <a href="/products" class="selected">Products</a>
+        {% else %}
         <a href="/products">Products</a>
-        <a href="/blog">Blog</a>
+        {% endif %}
+        <!--<a href="/blog">Blog</a>-->
+        {% if page.url contains '/contact' %}
+        <a href="/contact" class="selected">Contact</a>
+        {% else %}
         <a href="/contact">Contact</a>
+        {% endif %}
       </nav>
     </header>
     <section>
