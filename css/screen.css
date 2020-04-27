@@ -5,7 +5,7 @@ html, body {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   color: #313139;
-  background-color: #E4E5EA;
+  background-color: #ECEBE9;
 }
 h1 {
   font-size: 1.75em;
@@ -59,7 +59,7 @@ a[href] {
 
 a[href]:hover {
   text-decoration: underline;
-  color: black;
+  color: #93633F;
 }
 
 /* Layout */
@@ -94,14 +94,15 @@ section h2 {
   font-size: 21px;
 }
 .hero {
-  background-image: url(/img/hero-gradient.png);
-  position:relative;
-  width:100%;
-  height:600px;
-  background-size:contain;
+  background-image: url(/img/hero-toot-no-bg.jpg);
+  background-size:cover;
   background-repeat:no-repeat;
-  background-position:center;
-  display: table;
+  background-position:top;
+  background-attachment:fixed;
+  height:100%;
+  height:-moz-available;
+  height:-webkit-fill-available;
+  height:fill-available;
 }
 .product-card {
   display:flex;
