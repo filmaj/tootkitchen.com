@@ -78,6 +78,7 @@ section, header, nav, div {
 section {
   margin: 50px auto;
   padding: 0 30px;
+  max-width:1000px;
 }
 section p {
   margin: 0.25em;
@@ -88,18 +89,9 @@ section h1, section h2, section h3 {
   font-weight: 400;
 }
 section h1 {
-  margin: 5px;
 }
 section h2 {
-  margin: 0 10px;
   font-size: 21px;
-}
-section h3 {
-  margin: 0 15px;
-}
-section h1 i {
-  position: relative;
-  top: 2px;
 }
 .hero {
   background-image: url(/img/hero-gradient.png);
