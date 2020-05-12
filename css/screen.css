@@ -73,9 +73,24 @@ section, header, nav, div {
 .row {
   flex-direction: row;
 }
+.two-column {
+  flex-direction: row;
+}
+.two-column-bar {
+  padding: 0 25px;
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column-bar {
+    width: 100%;
+  }
+}
 
 /* Content */
-section {
+body > section {
   margin: 50px auto;
   padding: 0 30px;
   max-width:1000px;
@@ -114,4 +129,10 @@ section h2 {
 .product-card img {
   max-height:300px;
   object-fit:cover;
+}
+img.detail-pic {
+  max-height:300px;
+  object-fit:cover;
+  max-width:250px;
+  margin: 0 auto;
 }
