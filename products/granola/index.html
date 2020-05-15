@@ -3,20 +3,24 @@ layout: default
 title: Granola | Toot Kitchen Products
 description: Sweet, crunchy clusters, no refined sugars
 ---
-<section class="granola">
+<section class="detail">
   <h2>Granola</h2>
-  <div class="two-column">
-    <div>
-      <img src="/img/granola-product-1.jpg" class="detail-pic" />
-      <div>
-        <p>Sweet, crunchy clusters, refined sugar free.</p>
-        <p>Ingredients: oat, puffed rice, sunflower seeds, dried cranberries, dried apricot, apple sauce or maple syrup, vanilla, cinnamon, sea salt</p>
-        <p>How to use:</p>
-        <ul>
-          <li>Sweet use: as a quick nutritious snack to go or serve it on yogurt or chopped fruit as a breakfast or dessert.</li>
-          <li>Savoury use: sprinkle on top of salad for a touch of sweet crunch, our current favourite is on top of an arugula and feta cheese salad.</li>
-        </ul>
-      </div>
+  <img src="/img/granola-product-1.jpg" class="detail-pic" />
+  <p>Sweet, crunchy clusters, refined sugar free.</p>
+  <p>$10 for 250ml</p>
+  <div class="tabholder">
+    <nav class="row">
+      <a href="#" id="ingredients" style="text-decoration:underline;" onclick="tabclick(event, this)">Ingredients</a>
+      <a href="#" id="how-to-use" onclick="tabclick(event, this)">How to Use</a>
+    </nav>
+    <div id="ingredients-tab">
+      <p>oat, puffed rice, sunflower seeds, dried cranberries, dried apricot, apple sauce or maple syrup, vanilla, cinnamon, sea salt</p>
     </div>
-  </div> 
+    <div id="how-to-use-tab" style="display:none;">
+      <ul>
+        <li>Sweet use: as a quick nutritious snack to go or serve it on yogurt or chopped fruit as a breakfast or dessert.</li>
+        <li>Savoury use: sprinkle on top of salad for a touch of sweet crunch, our current favourite is on top of an arugula and feta cheese salad.</li>
+      </ul>
+    </div>
+  </div>
 </section>

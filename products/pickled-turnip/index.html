@@ -3,16 +3,21 @@ layout: default
 title: Pickled Turnip | Toot Kitchen Products
 description: Sour, crispy preserved beet and turnips
 ---
-<section class="pickled-turnip">
+<section class="detail">
   <h2>Pickled Turnip</h2>
-  <div class="two-column">
-    <div>
-      <img src="/img/turnip-product-1.jpg" class="detail-pic" />
-      <div>
-        <p>Sour, crispy, preserved turnip and beets with Middle Eastern spices.</p>
-        <p>Ingredients: beets, turnip, garlic, dried mint, dried taragon, garlic, black pepper, apple cider vinegar</p>
-        <p>How to use: A Middle Eastern classic, use in sandwiches or wraps or chopped up in tuna or potato salad for an extra kick of flavor.</p>
-      </div>
-    </div> 
+  <img src="/img/turnip-product-1.jpg" class="detail-pic" />
+  <p>Sour, crispy, preserved turnip and beets with Middle Eastern spices.</p>
+  <p>$10 for 250ml</p>
+  <div class="tabholder">
+    <nav class="row">
+      <a href="#" id="ingredients" style="text-decoration:underline;" onclick="tabclick(event, this)">Ingredients</a>
+      <a href="#" id="how-to-use" onclick="tabclick(event, this)">How to Use</a>
+    </nav>
+    <div id="ingredients-tab">
+      <p>beets, turnip, garlic, dried mint, dried taragon, garlic, black pepper, apple cider vinegar</p>
+    </div>
+    <div id="how-to-use-tab" style="display:none;">
+      <p>A Middle Eastern classic, use in sandwiches or wraps or chopped up in tuna or potato salad for an extra kick of flavor.</p>
+    </div>
   </div>
 </section>

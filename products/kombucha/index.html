@@ -3,16 +3,21 @@ layout: default
 title: Kombucha | Toot Kitchen Products
 description: Bubbly, tangy probiotic drink, flavoured with fruits, dried flowers and herbs
 ---
-<section class="kombucha">
+<section class="detail">
   <h2>Kombucha</h2>
-  <div class="two-column">
-    <div>
-      <img src="/img/kombucha-product-1.jpg" class="detail-pic" />
-      <div>
-        <p>Fizzy probiotic drink, flavoured with fruits, dried herbs, flowers and spices.</p>
-        <p>Ingredients: organic black tea and brown sugar (culture food).</p>
-        <p>How to use: On its own as a refreshing probiotic drink or mix in with your favourite liquor. Our current favourites are mango kombucha with tequila and cardamom kombucha with whisky.
-      </div>
+  <img src="/img/kombucha-product-1.jpg" class="detail-pic" />
+  <p>Fizzy probiotic drink, flavoured with fruits, dried herbs, flowers and spices.</p>
+  <p>$10 for 250ml</p>
+  <div class="tabholder">
+    <nav class="row">
+      <a href="#" id="ingredients" style="text-decoration:underline;" onclick="tabclick(event, this)">Ingredients</a>
+      <a href="#" id="how-to-use" onclick="tabclick(event, this)">How to Use</a>
+    </nav>
+    <div id="ingredients-tab">
+      <p>organic black tea and brown sugar (culture food).</p>
+    </div>
+    <div id="how-to-use-tab" style="display:none;">
+      <p>On its own as a refreshing probiotic drink or mix in with your favourite liquor. Our current favourites are mango kombucha with tequila and cardamom kombucha with whisky.
     </div>
   </div>
 </section>

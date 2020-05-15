@@ -131,8 +131,21 @@ section h2 {
   object-fit:cover;
 }
 img.detail-pic {
-  max-height:300px;
   object-fit:cover;
-  max-width:250px;
+  height: 550px;
   margin: 0 auto;
+  margin-bottom: 40px;
+}
+/* detail pages */
+.detail > p {
+  text-align: center;
+}
+.tabholder {
+  margin-top: 25px;
+}
+.tabholder nav {
+  margin: 0 auto;
+}
+.tabholder nav a {
+  margin: 10px;
 }

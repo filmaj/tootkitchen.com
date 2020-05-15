@@ -30,7 +30,11 @@
         {% else %}
         <a href="/products">Products</a>
         {% endif %}
-        <!--<a href="/blog">Blog</a>-->
+        {% if page.url contains '/blog' %}
+        <a href="/blog" class="selected">Blog</a>
+        {% else %}
+        <a href="/blog">Blog</a>
+        {% endif %}
         {% if page.url contains '/contact' %}
         <a href="/contact" class="selected">Contact</a>
         {% else %}
@@ -63,5 +67,27 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-27149382-3');
+    function hideEverything() {
+      const tabs = [
+        document.getElementById('ingredients-tab'),
+        document.getElementById('how-to-use-tab')
+      ];
+      const buttons = [
+        document.getElementById('ingredients'),
+        document.getElementById('how-to-use')
+      ];
+      tabs.forEach(function(tab) {
+        tab.style.display = 'none';
+      });
+      buttons.forEach(function(button) {
+        button.style.textDecoration = '';
+      });
+    }
+    function tabclick(evt, el) {
+      evt.preventDefault();
+      hideEverything();
+      document.getElementById(el.id).style.textDecoration = 'underline';
+      document.getElementById(el.id + '-tab').style.display = '';
+    }
   </script>
 </html>

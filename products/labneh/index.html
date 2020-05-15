@@ -3,13 +3,24 @@ layout: default
 title: Labneh | Toot Kitchen Products
 description: Thick, creamy, tangy fermented milk
 ---
-<section class="labneh">
+<section class="detail">
   <h2>Labneh</h2>
-  <div class="two-column">
-    <img src="/img/yogurt-product-1.jpg" style="max-height:350px;object-fit:cover;" />
-    <div>
-      <p>Thick, creamy, tangy, delicious fermented milk.</p>
-      <p>Ingredients: Milk, bacteria culture.</p>
+  <img src="/img/yogurt-product-1.jpg" class="detail-pic" />
+  <p>Rich, thick, strained yogurt.</p>
+  <p>$10 for 250ml</p>
+  <div class="tabholder">
+    <nav class="row">
+      <a href="#" id="ingredients" style="text-decoration:underline;" onclick="tabclick(event, this)">Ingredients</a>
+      <a href="#" id="how-to-use" onclick="tabclick(event, this)">How to Use</a>
+    </nav>
+    <div id="ingredients-tab">
+      <p>milk, probiotic cultures, double-strained.</p>
     </div>
-  </div> 
+    <div id="how-to-use-tab" style="display:none;">
+      <ul>
+        <li>For savory use: serve it as an appetizer with chopped carrots, celery, apple, flat bread or chips. Spread it on your favorite bread with chopped herbs as a sandwich base.</li>
+        <li>For sweet use: sprinkle granola on top with a side of chopped fruits. Spread on your favorite bread with pieces of nuts and dried fruits. Our favorite is labneh on bagels with walnut and raisins.</li>
+      </ul>
+    </div>
+  </div>
 </section>

@@ -3,16 +3,22 @@ layout: default
 title: Kimchi | Toot Kitchen Products
 description: Spicy, fizzy fermented vegetable medley
 ---
-<section class="kimchi">
+<section class="detail">
   <h2>Kimchi</h2>
-  <div class="two-column">
-    <div>
-      <img src="/img/kimchi-product-1.jpg" style="max-height:350px;max-width:250px;margin:0 auto;object-fit:cover;" />
-      <div>
-        <p>A Korean classic, spicy, fizzy fermented vegetable medley.</p>
-        <p>Ingredients: nappa cabbage, carrot, daikon, green onion, ginger, Asian pear, garlic Korean red pepper and fish sauce</p>
-        <p>How to use: as a side dish or in stir fries, stews, soups or salads. Mix in flour and cornstarch and fry to make kimchi pancakes. Our current favorite is adding a couple of spoons of this kimchi to fried eggs or on top of poached eggs. High in fiber and probiotics.</p>
-      </div>
+  <img src="/img/kimchi-product-1.jpg" class="detail-pic" />
+  <p>A Korean classic, spicy, fizzy fermented vegetable medley.</p>
+  <p>Comes in Regular and Spicy flavours.</p>
+  <p>$10 for 250ml</p>
+  <div class="tabholder">
+    <nav class="row">
+      <a href="#" id="ingredients" style="text-decoration:underline;" onclick="tabclick(event, this)">Ingredients</a>
+      <a href="#" id="how-to-use" onclick="tabclick(event, this)">How to Use</a>
+    </nav>
+    <div id="ingredients-tab">
+      <p>nappa cabbage, carrot, daikon, green onion, ginger, Asian pear, garlic Korean red pepper and fish sauce</p>
     </div>
-  </div> 
+    <div id="how-to-use-tab" style="display:none;">
+      <p>As a side dish or in stir fries, stews, soups or salads. Mix in flour and cornstarch and fry to make kimchi pancakes. Our current favorite is adding a couple of spoons of this kimchi to fried eggs or on top of poached eggs. High in fiber and probiotics.</p>
+    </div>
+  </div>
 </section>
