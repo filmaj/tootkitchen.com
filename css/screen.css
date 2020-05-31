@@ -80,7 +80,7 @@ section, header, nav, div {
   padding: 0 25px;
   width: 50%;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .two-column {
     flex-direction: column;
   }
@@ -112,7 +112,8 @@ section h2 {
   background-image: url(/img/hero-toot-no-bg.jpg);
   background-size:cover;
   background-repeat:no-repeat;
-  background-position:top;
+  background-position-y:40%;
+  background-position-x:center;
   background-attachment:fixed;
   height:100%;
   height:-moz-available;
@@ -132,9 +133,12 @@ section h2 {
 }
 img.detail-pic {
   object-fit:cover;
-  height: 550px;
   margin: 0 auto;
   margin-bottom: 40px;
+  max-width: 100%;
+  display:block;
+  height: auto;
+  max-height: 500px;
 }
 /* detail pages */
 .detail > p {
@@ -142,10 +146,25 @@ img.detail-pic {
 }
 .tabholder {
   margin-top: 25px;
+  max-width: 800px;
 }
 .tabholder nav {
   margin: 0 auto;
 }
 .tabholder nav a {
   margin: 10px;
+}
+.carousel {
+  margin-top: 40px;
+}
+.slick-prev:before, .slick-next:before {
+  color: black !important;
+}
+.slick-prev {
+  left: 25px !important;
+}
+@media (max-width: 600px) {
+  .slick-prev {
+    left: -25px !important;
+  }
 }
