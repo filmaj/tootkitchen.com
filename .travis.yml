@@ -1,6 +1,6 @@
 # platform settings
 dist: trusty
-language: 
+language:
   - ruby
   - java
 jdk: openjdk8
