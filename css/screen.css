@@ -1,11 +1,18 @@
 /* Site-wide */
+@font-face {
+  font-family:"Code-Light";
+  src:url("CODE_Light.eot?") format("eot"),url("CODE_Light.woff") format("woff"),url("CODE_Light.ttf") format("truetype"),url("CODE_Light.svg#Code-Light") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
 html, body {
   display: flex;
   flex-direction: column;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 400;
   color: #313139;
   background-color: #ECEBE9;
+  height: 100%;
 }
 h1 {
   font-size: 1.75em;
@@ -21,17 +28,16 @@ body {
   margin: 0;
 }
 #site-nav {
-  width: fit-content;
-  margin: 0 auto;
-}
-.poppins {
-  font-size: 18px;
-  font-family: 'Poppins';
-  font-weight: 300;
+  margin-left: 10%;
+  font-weight: 900;
   letter-spacing:0.5px;
+  font-size: 18px;
+}
+.sans-serif {
+  font-family: 'Code-Light';
 }
 #site-nav a {
-  margin: 0 7px;
+  margin: 0 5px;
   flex-wrap: wrap;
 }
 #site-nav a.selected {
@@ -43,29 +49,30 @@ header {
 }
 header h1 {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 50px;
+  margin-bottom:10px;
   font-size:32px;
   letter-spacing:3px;
-  font-family: 'Libre Baskerville';
-  font-weight: 400;
+  font-family: 'Code-Light';
+  font-weight: 900;
 }
 nav > a {
 }
 a[href] {
   transition: all 0.2s ease;
-  color: black;
+  color: #8f9779;
   text-decoration: none;
 }
 
 a[href]:hover {
   text-decoration: underline;
-  color: #93633F;
+  color: #ffbf00;
 }
-
 /* Layout */
 section, header, nav, div {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 .col {
   flex-direction: column;
@@ -80,14 +87,6 @@ section, header, nav, div {
   padding: 0 25px;
   width: 50%;
 }
-@media (max-width: 600px) {
-  .two-column {
-    flex-direction: column;
-  }
-  .two-column-bar {
-    width: 100%;
-  }
-}
 
 /* Content */
 body > section {
@@ -100,8 +99,8 @@ section p {
 }
 section h1, section h2, section h3 {
   text-align:center;
-  font-family: 'Libre Baskerville';
-  font-weight: 400;
+  font-family: 'Code-Light';
+  font-weight: 700;
 }
 section h1 {
 }
@@ -110,61 +109,25 @@ section h2 {
 }
 .hero {
   background-image: url(/img/hero-toot-no-bg.jpg);
-  background-size:cover;
   background-repeat:no-repeat;
-  background-position-y:40%;
+  background-position-y:top;
   background-position-x:center;
-  background-attachment:fixed;
+  background-size:cover;
   height:100%;
   height:-moz-available;
   height:-webkit-fill-available;
   height:fill-available;
+  flex-grow: 1;
 }
-.product-card {
-  display:flex;
-  flex-direction: column;
-  max-width:250px;
-  margin:10px;
-  text-align:center;
-}
-.product-card img {
-  max-height:300px;
-  object-fit:cover;
-}
-img.detail-pic {
-  object-fit:cover;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  max-width: 100%;
-  display:block;
-  height: auto;
-  max-height: 500px;
-}
-/* detail pages */
-.detail > p {
-  text-align: center;
-}
-.tabholder {
-  margin-top: 25px;
-  max-width: 800px;
-}
-.tabholder nav {
-  margin: 0 auto;
-}
-.tabholder nav a {
-  margin: 10px;
-}
-.carousel {
-  margin-top: 40px;
-}
-.slick-prev:before, .slick-next:before {
-  color: black !important;
-}
-.slick-prev {
-  left: 25px !important;
-}
-@media (max-width: 600px) {
-  .slick-prev {
-    left: -25px !important;
+
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column-bar {
+    width: 100%;
+  }
+  body > section {
+    padding: 0 10px !important;
   }
 }
